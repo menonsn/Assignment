@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="user.xsl"?>
+<users xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="uservalidation.xsd">
+  <!-- All payload data belongs here -->
+  <user>
+    <firstname>Rohit</firstname>
+    <lastname>Nair</lastname>
+    <bearcatid>M13489503</bearcatid>
+    <favoriteshortcut>Ctrl+U</favoriteshortcut>
+  </user>
+
+  <user>
+    <firstname>Nitheesha</firstname>
+    <lastname>Daka</lastname>
+    <bearcatid>M13489503</bearcatid>
+    <favoriteshortcut>Ctrl+Alt+Delete</favoriteshortcut>
+  </user>
+
+  <user>
+    <firstname>Siddharth</firstname>
+    <lastname>Menon</lastname>
+    <bearcatid>M13489503</bearcatid>
+    <favoriteshortcut>Windows+L</favoriteshortcut>
+  </user>
+</users>

@@ -1,0 +1,14 @@
+﻿@page
+@model XML_Individual_Assignment.Pages.ConsumeXMLModel
+@{
+    ViewData["Title"] = "ConsumeXML";
+    var message = ViewData["result"];
+}
+
+<h1>Consume XML</h1>
+<p>Upload your XML file!</p>
+<form method="post" enctype="multipart/form-data">
+    <input type="file" asp-for="Upload" />
+    <input type="submit" />
+</form>
+<h2>@message</h2>

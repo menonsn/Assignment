@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Sunsets and Sunrises!</title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <link rel="stylesheet" href="css/mobile.css" media="screen and  (max-device-width: 480px)" type="text/css" />
+    <!-- jquery -->
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $("#location").autocomplete({
+                source: "/AutoComplete",
+                minLength: 3
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="content">
+        <div class="col-md-4">
+            <h1><em><strong>Sunsets and Sunrises !!!</strong></em></h1>
+            <img src="https://www.washingtonpost.com/resizer/ofZRTPgEslSyKk3HLZfppXkm3hc=/1000x0/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/7VGD6HYYOVFNRLAQ3P2KQXZ2QQ.jpg" alt="Sunrise" />
+        </div>
+        <div class="col-md-4">
+
+            <label><strong>Check sunrise, sunset, dusk and dawn times for any location in the world!</strong></label>
+            <div><br /></div>
+            <form action="https://sunrise-sunset.org/search" method="get">
+                <div>
+                    <input name="location" type="text" id="location" />
+                    <input type="submit" value="Search" />
+                </div>
+            </form>
+            <br />
+            <br />
+
+            <em>Website Uses:</em>
+            <ul class="list-group">
+                <li class="list-group-item active">Search for Sunrises by location</li>
+                <li class="list-group-item">Search for Sunsets by location</li>
+            </ul>
+
+
+            <div class="nomobile">
+                <h2>What exactly are sunset and sunrises?</h2>
+                <p>It's important to note that both sunrise and sunset are 'instants'. The time range during which the day becomes night or vice versa is called twilight. We can distinguish between the morning twilight, that happens between dawn and sunrise and the evening twilight, that happens between sunset and dusk each day. Duration of twilight actually depends on our position on Earth and date of year. For example at Arctic and Antarctic latitudes, on winter, night never gets completely dark.</p>
+            </div>
+            <div id="whatfor">
+                <h2>Who may need to check sunrise and sunset times</h2>
+                <div class="use">
+                    <img src="https://sunrise-sunset.org/img/photographers.png" width="55" alt="Camera icon" />
+                    <h3>Photographers</h3>
+                    <p>Sunrise and sunset create the perfect natural light for photo and movie shoots.</p>
+                </div>
+                <div class="use">
+                    <img src="https://sunrise-sunset.org/img/astronomers.png" width="78" alt="Person looking through a telescope" />
+                    <h3>Astronomers</h3>
+                    <p>Explore the fascinating changes of the sky during a twilight spectacle.</p>
+                </div>
+                <div class="use">
+                    <img src="https://sunrise-sunset.org/img/explorers.png" width="51" alt="Magnifying glass with the shilouette of the Earth on it" />
+                    <h3>Explorers</h3>
+                    <p>Plan your hike around sunrise and sunset to get the most out of your day.</p>
+                </div>
+                <div class="use">
+                    <img src="https://sunrise-sunset.org/img/golfers.png" width="62" alt="Golf hole with a flag" />
+                    <h3>Golfers</h3>
+                    <p>Know when to reserve a tee time at your favorite golf course. </p>
+                </div>
+                <div class="use">
+                    <img src="https://sunrise-sunset.org/img/golfers.png" width="51" alt="Heart icon" />
+                    <h3>Lovers</h3>
+                    <p>Prepare a romantic date and enjoy the sunrise or sunset together.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
